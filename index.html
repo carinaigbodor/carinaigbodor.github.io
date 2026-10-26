@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Carina Igbodor | Educator and AI/ML Engineer</title>
+<meta name="description" content="Carina Igbodor is an educator and AI/ML engineering fellow in Ilorin, Nigeria, building AI tools that make learning accessible.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#1c1b33; --indigo:#2d2b63; --marigold:#f4b63a; --mint:#dff2e9; --paper:#f8f8fc; --muted:#5b5a7a; --line:#d9d8ea;
+  --bg:var(--paper); --text:var(--ink); --panel:#fff;
+}
+@media (prefers-color-scheme:dark){
+  :root{--bg:#14132b; --text:#ecebf7; --panel:#1d1c3b; --muted:#a9a8c9; --line:#33316a; --mint:#1f3a34;}
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
+body{margin:0;background:var(--bg);color:var(--text);font-family:"Nunito Sans",system-ui,sans-serif;font-size:1.05rem;line-height:1.65}
+h1,h2,h3{font-family:"Bricolage Grotesque",system-ui,sans-serif;line-height:1.1;margin:0}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--marigold);outline-offset:3px}
+.wrap{max-width:62rem;margin:0 auto;padding:0 1.25rem}
+
+nav{display:flex;flex-wrap:wrap;gap:.25rem 1.25rem;padding:1rem 0;font-weight:600}
+nav a{text-decoration:none;padding:.25rem 0;border-bottom:2px solid transparent}
+nav a:hover{border-color:var(--marigold)}
+
+.hero{background:var(--indigo);color:#fff;padding-bottom:4rem}
+.hero nav a{color:#fff}
+.hero h1{font-size:clamp(2.4rem,7vw,4.6rem);font-weight:800;max-width:15ch;margin-top:3rem}
+.hero p{max-width:38rem;font-size:1.2rem;margin:1.5rem 0 2rem;color:#e6e5fa}
+.sum{display:inline-block;font-family:"Bricolage Grotesque",sans-serif;font-weight:700;font-size:1.1rem;background:var(--marigold);color:var(--ink);padding:.4rem .9rem;border-radius:.4rem 1.2rem .4rem 1.2rem;transform:rotate(-2deg);margin-bottom:1rem}
+.btns{display:flex;flex-wrap:wrap;gap:.75rem}
+.btn{display:inline-block;padding:.75rem 1.4rem;border-radius:999px;font-weight:700;text-decoration:none;border:2px solid var(--marigold)}
+.btn.main{background:var(--marigold);color:var(--ink)}
+.btn.alt{color:#fff}
+.btn:hover{filter:brightness(1.1)}
+
+section{padding:4rem 0}
+h2{font-size:clamp(1.8rem,4vw,2.5rem);margin-bottom:1.5rem}
+.about{display:grid;gap:2rem;grid-template-columns:1fr}
+@media (min-width:48rem){.about{grid-template-columns:16rem 1fr;align-items:start}}
+.photo{aspect-ratio:4/5;background:var(--mint);border-radius:1.5rem 1.5rem 1.5rem .3rem;display:grid;place-items:center;color:var(--muted);font-size:.9rem;text-align:center;padding:1rem;overflow:hidden}
+.photo img{width:100%;height:100%;object-fit:cover}
+.about p{margin:0 0 1rem;max-width:40rem}
+
+.projects{display:grid;gap:1.25rem}
+@media (min-width:48rem){.projects{grid-template-columns:1.4fr 1fr}.projects .tall{grid-row:span 3}}
+.proj{background:var(--panel);border:1px solid var(--line);border-radius:1rem;padding:1.5rem}
+.proj.tall{background:var(--indigo);color:#fff;border-color:var(--indigo)}
+.proj h3{font-size:1.5rem;margin-bottom:.6rem}
+.proj p{margin:.5rem 0}
+.tag{display:inline-block;font-size:.85rem;font-weight:700;background:var(--mint);color:var(--ink);padding:.15rem .6rem;border-radius:999px;margin:.5rem .4rem 0 0}
+.proj a.link{font-weight:700;color:var(--marigold)}
+.proj:not(.tall) a.link{color:var(--indigo)}
+@media (prefers-color-scheme:dark){.proj:not(.tall) a.link{color:var(--marigold)}}
+
+.band{background:var(--mint);color:var(--ink)}
+@media (prefers-color-scheme:dark){.band{color:var(--text)}}
+.cols{display:grid;gap:2rem}
+@media (min-width:48rem){.cols{grid-template-columns:1fr 1fr}}
+.cols h3{font-size:1.3rem;margin-bottom:.8rem}
+ul.plain{list-style:none;margin:0;padding:0}
+ul.plain li{padding:.55rem 0;border-bottom:1px solid rgba(0,0,0,.12)}
+ul.plain li:last-child{border:0}
+ul.plain b{display:block}
+ul.plain span{color:var(--muted);font-size:.95rem}
+.band ul.plain span{color:inherit;opacity:.75}
+
+.contact p{max-width:36rem}
+.contact .big{font-family:"Bricolage Grotesque",sans-serif;font-size:clamp(1.2rem,4vw,1.8rem);font-weight:700;word-break:break-word}
+footer{padding:2rem 0;color:var(--muted);font-size:.9rem;border-top:1px solid var(--line)}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <nav aria-label="Main">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#credentials">Credentials</a>
+      <a href="#speaking">Speaking</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <h1>AI/ML engineer building for how Africa learns.</h1>
+    <span class="sum">Python, SQL, scikit-learn</span>
+    <p>I’m Carina Igbodor, an AI/ML engineering fellow in Ilorin, Nigeria. I train and test machine learning models, and I bring a teacher’s eye to AI that helps children learn.</p>
+    <div class="btns">
+      <a class="btn main" href="#projects">See my ML projects</a>
+      <a class="btn alt" href="#contact">Get in touch</a>
+    </div>
+  </div>
+</header>
+
+<main>
+<section id="about">
+  <div class="wrap about">
+    <div class="photo">
+      <!-- Replace this text with: <img src="images/carina.jpg" alt="Carina Igbodor"> -->
+      Add your photo here
+    </div>
+    <div>
+      <h2>About me</h2>
+      <p>I’m a Women in AI Fellowship fellow training as an AI/ML engineer. I build and evaluate models in Python and work with databases in SQL. I’m also an Assistant Lecturer at the Nigerian Army College of Education and a certified educationist, so I know how quickly a child decides “I’m not a math person.”</p>
+      <p>That is the problem I want to solve. I’m building toward work in AI/ML engineering, AI automation, AI ethics and governance, and EdTech research and product, with a focus on Africa and Nigeria.</p>
+      <p>I’m faith-forward, community-minded, and happiest when I’m helping a young person find their path.</p>
+    </div>
+  </div>
+</section>
+
+<section id="skills" style="padding-top:0">
+  <div class="wrap">
+    <h2>AI/ML skills</h2>
+    <div class="cols">
+      <article class="proj">
+        <h3>Machine learning</h3>
+        <p>Logistic regression, decision trees and random forests with scikit-learn. I build pipelines, tune them with GridSearchCV, and check results for problems like overfitting on small datasets.</p>
+      </article>
+      <article class="proj">
+        <h3>Python and SQL</h3>
+        <p>Python for data and models. SQL for database design, normalization, ER modeling and subqueries.</p>
+      </article>
+      <article class="proj">
+        <h3>Responsible AI and ethics</h3>
+        <p>Fairness, transparency and accountability in AI, with a focus on how it affects African communities and classrooms.</p>
+      </article>
+      <article class="proj">
+        <h3>AI for education</h3>
+        <p>Turning AI into tools teachers can use, from classroom dashboards to math support for children.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="projects" style="padding-top:0">
+  <div class="wrap">
+    <h2>Projects</h2>
+    <div class="projects">
+      <article class="proj tall">
+        <h3>ClassPulse</h3>
+        <p>An AI dashboard for science teachers. It helps a teacher see how a class is doing and decide what to do next.</p>
+        <p>Presented to fellowship judges using the SCRA model: situation, complication, resolution, action.</p>
+        <span class="tag">AI/ML</span><span class="tag">EdTech</span><span class="tag">Dashboard</span>
+        <p><a class="link" href="#contact">Ask for a walkthrough</a></p>
+      </article>
+      <article class="proj">
+        <h3>Numbers Without Fear</h3>
+        <p>A project to make math accessible and reduce math anxiety in children.</p>
+        <span class="tag">Education equity</span><span class="tag">Math</span>
+      </article>
+      <article class="proj">
+        <h3>Fellowship admission predictor</h3>
+        <p>Logistic regression, decision tree and random forest models on a 100-row dataset. All three scored 1.0 accuracy, and I traced that to the small dataset rather than trusting it.</p>
+        <span class="tag">scikit-learn</span><span class="tag">Model evaluation</span>
+      </article>
+      <article class="proj">
+        <h3>Survival prediction model</h3>
+        <p>Scikit-learn pipelines with GridSearchCV to compare logistic regression, decision tree and random forest models.</p>
+        <span class="tag">Pipelines</span><span class="tag">GridSearchCV</span>
+      </article>
+      <article class="proj">
+        <h3>Loan application prediction</h3>
+        <p>A machine learning model that predicts the outcome of loan applications from applicant data.</p>
+        <span class="tag">Classification</span><span class="tag">Python</span>
+      </article>
+      <article class="proj">
+        <h3>Restaurant monthly revenue prediction</h3>
+        <p>A machine learning model that predicts how much a restaurant earns each month.</p>
+        <span class="tag">Regression</span><span class="tag">Python</span>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="credentials" class="band">
+  <div class="wrap cols">
+    <div>
+      <h2>Experience</h2>
+      <ul class="plain">
+        <li><b>Assistant Lecturer</b><span>Nigerian Army College of Education, since November 2023</span></li>
+        <li><b>AI/ML Engineering Fellow</b><span>Women in AI Fellowship</span></li>
+        <li><b>CS and STEM lecturer, teacher</b><span>Classroom and college teaching</span></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Education</h2>
+      <ul class="plain">
+        <li><b>B.Sc. Computer Science</b><span>Delta State University</span></li>
+        <li><b>Postgraduate Diploma in Education (PGDE)</b><span>University of Ilorin</span></li>
+        <li><b>Teachers Registration Council of Nigeria (TRCN)</b><span>Registered member</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="speaking">
+  <div class="wrap">
+    <h2>Speaking and mentoring</h2>
+    <p style="max-width:40rem">I love public speaking, and I use it to make technology and learning feel reachable. I mentor young girls who are finding their path in life, and I was invited to judge the Kwara State STEM Fun Fest debate competition in October 2026.</p>
+  </div>
+</section>
+
+<section id="contact" class="contact" style="padding-top:0">
+  <div class="wrap">
+    <h2>Let’s talk</h2>
+    <p>I’m open to conversations about AI in education, speaking invitations, mentoring, and collaboration.</p>
+    <p class="big"><a href="mailto:carinaigbodor0@gmail.com">carinaigbodor0@gmail.com</a></p>
+    <div class="btns" style="margin-top:1rem">
+      <a class="btn main" href="https://linkedin.com/in/carina-igbodor-753690195" rel="noopener">Connect on LinkedIn</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">© <span id="yr">2026</span> Carina Uregbo Igbodor. Ilorin, Kwara State, Nigeria.</div>
+</footer>
+<script>document.getElementById("yr").textContent=new Date().getFullYear();</script>
+</body>
+</html>
